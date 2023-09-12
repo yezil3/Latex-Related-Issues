@@ -1,2 +1,2 @@
 ### \subfloat command error: Undefined control sequence.
-Delete '\usepackage{subfig}'
+Delete package 'subfig', and use package 'subcaption'
