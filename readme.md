@@ -12,3 +12,7 @@ natbib automatically loads achemso package, so change the command: \bibliography
 ### Load markdown after the enumitem package: Undefined control sequence error.
 The order of loading these two packages matters. Should first load markdown and then load enumitem.
 The reason MIGHT BE the markdown package redefines the enumerate and itemize environment, thus incurring a conflict.
+
+### Error for \usepackage[dvipsnames]{xcolor} in an acmart documentclass
+Use \PassOptionsToPackage{prologue,dvipsnames}{xcolor} before \documentclass, and then add \usepackage[dvipsnames]{xcolor}.
+
