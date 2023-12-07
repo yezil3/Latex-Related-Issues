@@ -16,3 +16,9 @@ The reason MIGHT BE the markdown package redefines the enumerate and itemize env
 ### Error for \usepackage[dvipsnames]{xcolor} in an acmart documentclass
 Use \PassOptionsToPackage{prologue,dvipsnames}{xcolor} before \documentclass, and then add \usepackage[dvipsnames]{xcolor}.
 
+### Import markdown package: LaTeX Error: Command `\Bbbk' already defined.
+\let\Bbbk\relax
+\usepackage{markdown}
+
+### Script file ./output.markdown.lua not found
+
