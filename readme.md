@@ -1,6 +1,10 @@
 ### \subfloat command error: Undefined control sequence.
 Delete package 'subfig', and use package 'subcaption'
 
+### Error: Use of \label@optarg doesn't match its definition.
+Delete the 'subcaption' package and add:
+\usepackage[caption=false,labelformat=simple]{subfig}
+\renewcommand\thesubfigure{(\alph{subfigure})}
 ### Could not establish a connection to "hostname".
 (1) Open the command panel on VS code (Ctrl+Shift+P for Windows and Cmd+Shift+P for Mac).
 (2) Search for Kill VS Code Server on Host, click it - it will be automatically deleted.
