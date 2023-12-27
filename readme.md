@@ -28,3 +28,33 @@ Use \PassOptionsToPackage{prologue,dvipsnames}{xcolor} before \documentclass, an
 
 ### Script file ./output.markdown.lua not found
 
+
+### Frontier documentclass subcaption
+```
+\setcounter{figure}{2}
+\setcounter{subfigure}{0}
+\begin{subfigure}
+\setcounter{figure}{2}
+\setcounter{subfigure}{0}
+    \centering
+    \begin{minipage}[b]{0.5\textwidth}
+        \includegraphics[width=\linewidth]{logo1.eps}
+        \caption{This is Subfigure 1.}
+        \label{fig:Subfigure 1}
+    \end{minipage}  
+   
+\setcounter{figure}{2}
+\setcounter{subfigure}{1}
+    \begin{minipage}[b]{0.5\textwidth}
+        \includegraphics[width=\linewidth]{logo2.eps}
+        \caption{This is Subfigure 2.}
+        \label{fig:Subfigure 2}
+    \end{minipage}
+
+\setcounter{figure}{2}
+\setcounter{subfigure}{-1}
+    \caption{Enter the caption for your subfigure here. \textbf{(A)} This is the caption for Subfigure 1. \textbf{(B)} This is the caption for Subfigure 2.}
+    \label{fig: subfigures}
+\end{subfigure}
+```
+
