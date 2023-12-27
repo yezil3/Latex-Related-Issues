@@ -26,9 +26,6 @@ Use \PassOptionsToPackage{prologue,dvipsnames}{xcolor} before \documentclass, an
 \let\Bbbk\relax
 \usepackage{markdown}
 
-### Script file ./output.markdown.lua not found
-
-
 ### Frontier documentclass subcaption
 ```
 \setcounter{figure}{2}
